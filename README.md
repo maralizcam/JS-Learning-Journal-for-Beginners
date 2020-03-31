@@ -1,4 +1,4 @@
-# CML.com
+# JSLearningJournal.com
 JS Learning Journal For Beginners
 
 VARIABLES:
