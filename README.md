@@ -187,3 +187,25 @@ var isSquare = function(n){
 }  else {
   return false
 }}
+
+STRING INTEGERS DIVIDED BY 3:
+
+function divisibleByThree(str) {
+  let s = 0;
+  for (const c of str)
+    s += parseInt(c);
+  return s % 3 == 0;
+}
+
+FIND THE MIDDLE LETTERS OF EVEN & ODD STRINGS:
+
+function getMiddle(str) {
+  let length = str.length
+  let middle = Math.floor(length/2)
+  if (str.length % 2 === 0){
+  // if even
+  return str[middle - 1] + str[middle]
+} else {
+  // if odd
+  return str[middle]
+}}
