@@ -1,0 +1,26 @@
+1. Specify DOCUMENT TYPE 
+
+<!DOCTYPE html>
+
+2. Create First Tag w (opening and closing tags)
+
+<html>
+</html>
+
+3. Create the head tag which allows us to configure the doc
+
+<head>
+
+4. Create the body tag
+
+<body>
+</body>
+
+5. Insert paragraph
+
+<p>
+</p>
+
+6.// DOM - Document (html) Object (js) Model
+6a. Delete an object from document with JS
+
