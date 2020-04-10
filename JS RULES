@@ -1,0 +1,77 @@
+JS RULES:
+
+6 Types:
+  1. Strings
+  2. Numbers
+  3. Booleans
+  4. Objects
+  5. Arrays
+  6. Functions
+  
+  STRINGS:
+  
+  -Hold data in text form such as words, phrases, or sentences
+  -Let and Const allow Strings and Variable to connect
+  -String Literals must be surrounded by '' or ""
+  -String Constructors looks like string(parameter goes here)
+  -Template Literals can insert other variable into sentences or phrases for maleability `This is a ${template}`
+  -Escape or \ let's us include symbols of any kind into template literals and other strings
+  -Words or Phrases
+  -Let and Const allow Strings and Variable to connect
+  -For a long string that lasts multiple lines, you can either:
+    -use a + at the end of each line to continue the string on the next line
+    -use a \ at the end of each line to continue the string on the next line
+    
+  COMMON PRACTICES WITH STRINGS:
+  
+  -Access an individual character in a string with charAt()
+    -return 'cat'.charAt(1) // returns "a"
+    -return 'cat'[1] // returns "a"
+  
+  NUMBERS:
+  
+  -Using the Number object to assign values to numeric variables:
+    -const biggestNum     = Number.MAX_VALUE
+    -const smallestNum    = Number.MIN_VALUE
+    -const infiniteNum    = Number.POSITIVE_INFINITY
+    -const negInfiniteNum = Number.NEGATIVE_INFINITY
+    -const notANum        = Number.NaN
+    
+  **VARIABLES:
+  
+  -A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($)
+  -Subsequent characters can also be digits (0–9)
+  
+  BOOLEANS:
+
+  COMPARISON OPERATORS:
+    - ===
+    - ==
+    - <
+    - >
+    - !=
+    - >=
+    - <=
+  *Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object??????
+  
+  IF/ELSE:
+  
+  if (condition)
+  statement1
+ [else
+  statement2]
+  
+  IN A FUNCTION:
+  
+  function testNum(a) {
+  if (a > 0) {
+    return "positive";
+  } else {
+    return "NOT positive";
+  }
+}
+
+console.log(testNum(-5));
+// expected output: "NOT positive"
+
+
