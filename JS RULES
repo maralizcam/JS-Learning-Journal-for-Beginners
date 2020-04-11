@@ -1,9 +1,11 @@
 JS RULES:
 
 6 Types:
+  [Primitive Types:]
   1. Strings
   2. Numbers
   3. Booleans
+  [Reference Types:]
   4. Objects
   5. Arrays
   6. Functions
@@ -37,10 +39,14 @@ JS RULES:
     -const negInfiniteNum = Number.NEGATIVE_INFINITY
     -const notANum        = Number.NaN
     
-  **VARIABLES:
+  VARIABLES:
   
   -A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($)
   -Subsequent characters can also be digits (0–9)
+  -Cannot be a reserved keyword
+  -Should be meaningful for clear code
+  -CamelCase words (no spaces or hyphens)
+  -Case Sensitive
   
   BOOLEANS:
 
@@ -74,4 +80,75 @@ JS RULES:
 console.log(testNum(-5));
 // expected output: "NOT positive"
 
+IF STATEMENTS:
+
+if (condition)
+   statement1
+[else
+   statement2]
+   
+   ----------
+
+if (condition1)
+  statement1
+else if (condition2)
+  statement2
+else if (condition3)
+  statement3
+...
+else
+  statementN
+  
+LOGICAL OPERATORS:
+  
+-&& (AND)
+-|| (OR)
+-! (NOT)
+-Truthy 
+-Falsy 
+-Examples of expressions that can be converted to false are:
+  -null;
+  -NaN;
+  -0;
+  -empty string ("" or '' or ``);
+  -undefined.
+-Double NOT (!!)
+  -n1 = !!true                   // !!truthy returns true
+  -n2 = !!{}                     // !!truthy returns true: any object is truthy...
+  -n3 = !!(new Boolean(false))   // ...even Boolean objects with a false .valueOf()!
+  -n4 = !!false                  // !!falsy returns false
+  -n5 = !!""                     // !!falsy returns false
+  -n6 = !!Boolean(false)         // !!falsy returns false
+
+VARIABLE SCOPE:
+*************************************** ADD *******************************************
+
+FUNCTIONS:
+
+-Structure:
+1. Arguments or Parameters
+2. Function Code
+3. Return Value
+-Each function has two properties: 
+  -length:
+    -number of named arguments specified in the function declaration
+  -prototype:
+    -the actual function object
+-A function object has three methods: 
+  1. apply()
+    EX:
+    let cat = {type: 'Cat', sound: 'Meow'};
+    let dog = {type: 'Dog', sound: 'Woof'};
+
+    let say = function (greeting) {
+    console.log(greeting);
+    // access current this
+    console.log(this.type + ' says ' + this.sound);
+};
+       1. say.apply(cat, ['Hi']);
+  
+  2. call() 
+       2. say.call(cat,'Hi');
+       
+  3. bind()
 
