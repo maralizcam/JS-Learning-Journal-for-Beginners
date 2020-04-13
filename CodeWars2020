@@ -29,3 +29,15 @@ function expressionMatter(a, b, c) {
     a * b + c,
   );
 }
+
+Take an array and remove every second element out of that array. Always keep the first element and start removing with the next element.
+
+function removeEveryOther(arr){
+  return arr.filter(function(elem, index) {
+    return index % 2 === 0;
+  });
+}
+
+OR
+
+const removeEveryOther = arr => arr.filter((item, i) =>  i % 2 == 0);
