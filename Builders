@@ -1,0 +1,114 @@
+COMMAND LINE INTERFACE
+
+-Graphical User Interface (GUI)
+  -Uses icons for interaction, Easy to use, Low bar for learning usage
+-Command Line Interface (CLI)
+  -No graphics or icons
+  -Text-based interface
+  -Type commands
+  -Less systen resources than a GUI
+  -Doesn't change as often or as much as a GUI
+  -It is possible to create programs and run tasks
+-UNIX
+  -Interface Operating System for all Macs
+-ROOT Directory
+  -Stores user preferences
+-Directory
+  -Stores user information
+
+-ANATOMY OF A COMMAND LINE
+  -Prompt: shows the current directory (ends with a $
+  -Command: supplied by the user and describes an action
+    -Action: followed by the action (single character)
+    -Option or Flag: beings with a dash, then a single letter as the option
+  -Argument: the Object of the Action
+  -Text Cursor: Show the current place of user interaction
+
+1. Start a Terminal (and Shell)
+  *control C cancel current command and resets to a new line
+  When in doubt, control C to get out!
+  
+Key Concepts:
+
+Command Prompt
+Command
+Options (flags)
+Arguments
+Cursor
+CTRL + C (Kill command)
+echo
+
+2. CLI - Cursor Navigation
+Let's learn how to navigate the cursor in the Command Line, remember, "It's not a bug, it's a feature"!
+
+Key Concepts:
+
+CTRL + a : Move to beginning
+CTRL + e : Move to end
+Use Up and Down arrow keys to toggle through previous commands
+CTRL + u : Clears current line
+CTRL + l : Clears the terminal window (does not clear history)
+
+CLI - ls command
+In this lesson, we'll look at the GUI (Graphical User Interface) and the CLI (Command Line Interface) side by side. We'll compare how the ls command relates to the information in our GUI. We'll also review a few additional commands!
+
+Key Concepts:
+
+ls : List command (lists the directories in from the current directory)
+ls + directory : Lists the directories from the argument
+pwd : print working directory
+File Path : A files location in the Filesystem
+Directory : A "folder"
+Standard Output : The output in the Command Line after a command
+man + command : Manual, displays the manual for the current command
+ls -a : Displays all of the "hidden" files in a directory
+q : Another "get out of trouble" command (try q when CTRL + C doesn't work
+
+Directories and Filesystems
+In the previous lesson, we caught a glimpse of directories and the filesystem, now it's time to dive deeper into these topics! We'll review directories, the filesystem's tree-like structures, system folders, and more!
+
+Key Concepts:
+
+Paths
+Absolute Path : Full path starting from the Systems Root directory
+Relative Path : a path starting from it's current location relative to another location in the filesystem.
+..: move up the filesystem
+Directory : "folder"
+
+Important directories:
+  -/bin
+  -/usr
+  -/sbin
+  
+  Navigating the Filesystem
+Now that we have an idea on how the Filesystem (FS) is structured, let's learn a basic command to help us navigate throughout it!
+
+Key Concepts:a
+
+cd + path : the change directory path changes the current working directory the path passed as an argument.
+Absolute Path
+Relative Path
+cd : if the argument is omitted from cd, cd will take the user back to the home directory.
+
+Making Directories
+Let's make new directories and files and see them appear in the CLI and GUI!
+
+Key Concepts:
+
+mkdir + directory_name : Create a directory and pass it a name.
+touch + filename : Create a file and pass it a name.
+mv + file_to_move + destination_path : Move a file or folder to a new location
+mkdir + directory1 + directory2 + directory3... : Make multiple directories at once.
+
+Command Line Interface sends commands to the shell which sends commands to the operating system and reverse.
+MAC = Bourne Again Shell
+
+Using Basic Git commands
+EXAMPLES USING THE BASIC GIT COMMANDS IN THE TERMINAL
+Git will be your constant companion in the coming years as a developer. It's important to get as much practice with it as you can. After watching this video, practice git add, git commit, git status and git log with your own projects and files.
+
+If git is not installed on your computer, please reference our 'Installing Git' video which can be found in the 'Setting up your Box' section of this workshop.
+
+RECAP QUESTIONS
+How do you create a local repository?
+What is the staging area and how do you add files to it?
