@@ -112,3 +112,28 @@ If git is not installed on your computer, please reference our 'Installing Git' 
 RECAP QUESTIONS
 How do you create a local repository?
 What is the staging area and how do you add files to it?
+
+Using Git and GitHub in Harmony
+INTRO TO GITHUB
+Before watching this video, make a free account on Github if you haven't already done so here.
+
+This video covers the relationship between Github and Git, how to make remote repositories, and the proper workflow when forking and cloning your Test First assignments.
+
+There is so much more to git than these videos can cover! Make sure you check out the references below! Git may seem very confusing and out there right now, but with enough practice, it will become second nature.
+
+RECAP QUESTIONS
+What is the process of cloning and forking a repository?
+What is the difference between the two?
+What does 'origin' refer to?
+
+git commit
+git add (add files to the staging area)
+git log (shows a list of commits up till that point with the author and time stamp)
+git commit -m 'add message here'
+git checkout -b []
+git checkout
+git [] -f [] head~#
+git checkout head^
+git branch -f maste Head~#
+git reset HEAD~1
+git revert HEAD~1 (for remote branches)
