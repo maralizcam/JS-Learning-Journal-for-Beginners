@@ -137,3 +137,14 @@ git checkout head^
 git branch -f maste Head~#
 git reset HEAD~1
 git revert HEAD~1 (for remote branches)
+
+KEEP PUSHING AND COMMITTING TO GITHUB:
+
+$git add .
+$git commit -m 'your commit message'
+$git push origin master
+
+TESTING
+
+Unit function starts with an it function to test what we are testing
+describe function holds the code
